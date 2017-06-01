@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu"
+            android:icon="@drawable/ic_restaurant"
+            android:title="Menu" />
+
+        <item
+            android:id="@+id/nav_mi_carrito"
+            android:icon="@drawable/ic_shop"
+            android:title="Mi carrito" />
+
+        <item
+            android:id="@+id/nav_mi_perfil"
+            android:icon="@drawable/ic_shop"
+            android:title="Mi Perfil" />
+
+    </group>
+
+    <item android:title="Comunicacion">
+        <menu>
+
+            <item
+                android:id="@+id/nav_facebook"
+                android:icon="@drawable/ic_facebook"
+                android:title="Facebook" />
+
+            <item
+                android:id="@+id/nav_twitter"
+                android:icon="@drawable/ic_twitter"
+                android:title="Twitter" />
+
+            <item
+                android:id="@+id/nav_call"
+                android:icon="@drawable/ic_call"
+                android:title="Llamar" />
+
+        </menu>
+    </item>
+
+</menu>

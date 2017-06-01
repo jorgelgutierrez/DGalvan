@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "172905971292",
+    "firebase_url": "https://proyectos-bb6c4.firebaseio.com",
+    "project_id": "proyectos-bb6c4",
+    "storage_bucket": "proyectos-bb6c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:172905971292:android:08665938dfd74a1d",
+        "android_client_info": {
+          "package_name": "gutierrez.jorge.dgalvan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "172905971292-tl1n956gu3moqa5ppca4qn8jg8f4q5cp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpaUX9BhLaplXVrQkuDy_QN6kkfm-Xw-0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

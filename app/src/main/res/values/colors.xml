@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#795548</color>
+    <color name="colorPrimaryDark">#3E2723</color>
+    <color name="colorAccent">#FF5722</color>
+    <color name="colorFondo">#979695</color>
+    <color name="colorCardview">#9afc38</color>
+    <color name="colorTitulos">#000000</color>
+    <color name="colorSubtitulos">#000000</color>
+    <color name="colorTextoContenido">#000000</color>
+    <color name="colorTextoBotones">#000000</color>
+    <color name="colorFondoActivities">#FFFFFF</color>
+</resources>

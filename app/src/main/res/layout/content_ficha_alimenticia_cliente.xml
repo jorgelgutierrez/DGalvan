@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:id="@+id/activity_ficha_alimenticia_cliente"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".FichaAlimenticiaCliente"
+    tools:showIn="@layout/activity_ficha_alimenticia_cliente">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                        <TextView
+                            style="@style/titulos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Ficha Alimenticia"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:id="@+id/titulo" />
+
+                        <TextView
+                            style="@style/texto_contenidos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_titulo_nombre"
+                            android:text="Ingresa tu Nombre"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:layout_marginTop="20dp" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/nombre"
+                            android:hint="Nombre"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                            android:inputType="text"
+                            android:textColor="@color/colorTitulos"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                        <TextView
+                                            style="@style/texto_contenidos"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/txt_titulo_edad"
+                                            android:text="Ingresa tu Edad"
+                                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/edad"
+                                            android:hint="Edad"
+                                            android:inputType="number"
+                                            android:maxLength="9"
+                                            android:layout_marginTop="20dp"
+                                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                                            android:textColor="@color/colorTitulos" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                        <TextView
+                                            style="@style/texto_contenidos"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/txt_titulo_codigo"
+                                            android:text="Selecciona tu sexo"
+                                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+                                        <Spinner
+                                            style="@style/spinners"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="20dp"
+                                            android:entries="@array/sexos"
+                                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                                            android:layout_marginTop="10dp"
+                                            android:id="@+id/sexo"/>
+
+                                </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            style="@style/texto_contenidos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_titulo_alergico"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:text="Eres alergico de algun ingrediente?" />
+
+                        <TextView
+                            android:id="@+id/txt_titulo_alergico_mensaje"
+                            style="@style/texto_contenidos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="En caso de que si mencionar cuales..."
+                            android:textColor="@color/colorFondo"
+                            android:textSize="11sp" />
+
+                        <EditText
+                            android:id="@+id/alergias"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                        <TextView
+                            style="@style/texto_contenidos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_titulo_carnes"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:text="Consumes todo tipo de carnes?" />
+
+                        <TextView
+                            android:id="@+id/txt_titulo_carnes_mensaje"
+                            style="@style/texto_contenidos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="En caso de que no mencionar cuales..."
+                            android:textColor="@color/colorFondo"
+                            android:textSize="11sp" />
+
+                        <EditText
+                            android:id="@+id/carnes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                        <TextView
+                            style="@style/texto_contenidos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_titulo_verduras"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:text="Consumes todo tipo de verduras?" />
+
+                        <TextView
+                            android:id="@+id/txt_titulo_verduras_mensaje"
+                            style="@style/texto_contenidos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="En caso de que no mencionar cuales..."
+                            android:textColor="@color/colorFondo"
+                            android:textSize="11sp" />
+
+                        <EditText
+                            android:id="@+id/verduras"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                        <TextView
+                            style="@style/texto_contenidos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_titulo_leguminosas"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:text="Consumes todo tipo de leguminosas?" />
+
+                        <TextView
+                            android:id="@+id/txt_titulo_leguminosas_mensaje"
+                            style="@style/texto_contenidos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="En caso de que no mencionar cuales..."
+                            android:textColor="@color/colorFondo"
+                            android:textSize="11sp" />
+
+                        <EditText
+                            android:id="@+id/leguminosas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                        <TextView
+                            style="@style/texto_contenidos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_titulo_cereales"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:text="Consumes todo tipo de cereales?" />
+
+                        <TextView
+                            android:id="@+id/txt_titulo_cereales_mensaje"
+                            style="@style/texto_contenidos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="En caso de que no mencionar cuales..."
+                            android:textColor="@color/colorFondo"
+                            android:textSize="11sp" />
+
+                        <EditText
+                            android:id="@+id/cereales"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                        <TextView
+                            style="@style/texto_contenidos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_titulo_tortipan"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:text="Consumes Tortilla o Pan?" />
+
+                        <TextView
+                            android:id="@+id/txt_titulo_toripan_mensaje"
+                            style="@style/texto_contenidos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Menciona cual consumes o ambos..."
+                            android:textColor="@color/colorFondo"
+                            android:textSize="11sp" />
+
+                        <EditText
+                            android:id="@+id/tortipan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                        <TextView
+                            style="@style/texto_contenidos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_titulo_picante"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:text="Te gusta la comida con picante?" />
+
+                        <TextView
+                            android:id="@+id/txt_titulo_picante_mensaje"
+                            style="@style/texto_contenidos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="En caso de que si mencionar cuanto (Bajo, Normal o Muy Picante)..."
+                            android:textColor="@color/colorFondo"
+                            android:textSize="11sp" />
+
+                        <EditText
+                            android:id="@+id/picante"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                        <TextView
+                            style="@style/texto_contenidos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_titulo_pago"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:text="Cual es su forma de pago?" />
+
+                        <TextView
+                            android:id="@+id/txt_titulo_pago_mensaje"
+                            style="@style/texto_contenidos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mencionar si prefiere efectivo o tarjeta..."
+                            android:textColor="@color/colorFondo"
+                            android:textSize="11sp" />
+
+                        <EditText
+                            android:id="@+id/pago"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                        <Button
+                            style="@style/botones"
+                            android:layout_marginTop="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Guardar Mi Ficha Alimenticia"
+                            android:onClick="GuardarFichaAlimenticia"
+                            android:id="@+id/bt_crear_linea" />
+
+                </LinearLayout>
+
+        </ScrollView>
+
+</LinearLayout>

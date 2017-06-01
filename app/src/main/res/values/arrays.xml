@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="sexos">
+        <item>Seleccionar</item>
+        <item>Femenino</item>
+        <item>Masculino</item>
+    </string-array>
+
+    <string-array name="numeros_paquete">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="complementos">
+        <item>Carne de Red</item>
+        <item>Carne de Puerco</item>
+        <item>Pollo</item>
+        <item>Pescado</item>
+    </string-array>
+
+    <string-array name="guarniciones">
+        <item>Arroz</item>
+        <item>Frijoles</item>
+        <item>Espagueti</item>
+        <item>Ensalada</item>
+    </string-array>
+
+    <string-array name="bebidas">
+        <item>Coca Cola</item>
+        <item>Agua de Fresa</item>
+        <item>Te Helado</item>
+        <item>Cafe</item>
+    </string-array>
+
+
+</resources>
